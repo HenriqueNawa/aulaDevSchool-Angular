@@ -1,0 +1,13 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    border: 1px inset;
+    background-color: #336EFF;
+    padding-left: 1rem;
+    ul{
+        list-style: circle;
+        display: flex;
+        gap: 10px;
+        color: aqua;
+    }
+}
