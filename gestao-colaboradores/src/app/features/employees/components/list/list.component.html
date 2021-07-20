@@ -1,17 +1,6 @@
 <h2>Lista de Colaboradores</h2>
-    <table>
-      <tr>
-        <th>ID</th>
-        <th>Nome</th>
-        <th>Cargo</th>
-        <th>Salário (R$)</th>
-      </tr>
-      
-      <tr *ngFor="let colaborador of colaboradores">
-        <td>{{colaborador.id}}</td>
-        <td>{{colaborador.nome}}</td>
-        <td>{{colaborador.cargo}}</td>
-        <td>{{colaborador.salario}}</td>
-      </tr>
-    </table>
-    
+  <app-collaborator
+  *ngFor="let item of colaboradores"
+  [employee] = "item"
+  >
+</app-collaborator>

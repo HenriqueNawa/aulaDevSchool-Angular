@@ -15,8 +15,12 @@ export class ListComponent implements OnInit {
     { id: 4, nome: 'Alberto Silva', salario: 10000, cargo: 'Dev Sr' }, 
     { id: 5, nome: 'Rogerio Souza', salario: 9000, cargo: 'Dev Sr' }, 
     { id: 6, nome: 'Gabriel Miguel', salario: 9500, cargo: 'Dev Sr' }, 
-    { id: 6, nome: 'Alan Jhonnes', salario: 11000, cargo: 'Arquiteto' } ]
-
+    { id: 7, nome: 'Alan Jhonnes', salario: 11000, cargo: 'Arquiteto' } ]
+  
+  removeEmployee (id: number){
+    this.colaboradores.splice(id,1);
+    alert(`Id ${id}`)
+  }
   constructor() { }
 
   ngOnInit(): void {
