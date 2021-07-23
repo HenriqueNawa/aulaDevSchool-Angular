@@ -4,8 +4,8 @@
         <tr>
             <td>{{employee?.id}}</td>
             <td>{{employee?.nome}}</td>
-            <td>{{employee?.cargo}}</td>
-            <td>{{employee?.salario}}</td>
+            <td>{{employee?.cargo | uppercase}}</td>
+            <td>{{employee?.salario | currency: 'BRL' }}</td>
             <td><button (click)="removeColaborator()">Remover</button></td>
           </tr>
     </table>

@@ -20,6 +20,7 @@ export class CollaboratorComponent implements OnInit {
 
   removeColaborator(){
     alert(`Colaborador ${this.employee?.nome} excluído com sucesso`)
+  
   }
 
 }

@@ -5,6 +5,7 @@ import { CollaboratorComponent } from './components/collaborator/collaborator.co
 
 
 
+
 @NgModule({
   declarations: [
     ListComponent,
@@ -14,6 +15,7 @@ import { CollaboratorComponent } from './components/collaborator/collaborator.co
     CommonModule
   ], 
   exports: [ListComponent]
+  
   
 })
 export class EmployeesModule { }
